@@ -1,0 +1,169 @@
+@import "../../vars.css";
+/* Container Styles */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #422a93, #140221); */
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Content Box */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  max-width: 650px; /* Increased max-width */
+  padding: 30px; /* More padding */
+  background: rgba(255, 255, 255, 0.1); /* Light semi-transparent background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Title Styling with New Fade-in Animation */
+.title {
+  font-size: 3.5rem; /* Larger font */
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: 2px; /* Add letter spacing */
+  animation: fadeInTitle 0.8s ease forwards; /* New fade-in animation */
+}
+
+/* Title Animation */
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Description with Smooth Slide from Left */
+.description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  animation: slideFromLeft 1.2s ease-out;
+}
+
+/* Slide from Left Animation */
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Button with Hover Effect and Scale */
+.contactBtn {
+  padding: 12px 25px;
+  background-color: #010f1e58;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.4s ease, transform 0.3s ease; /* Change bg and scale */
+}
+
+.contactBtn:hover {
+  background-color: #2880deeb; /* Darker blue on hover */
+  transform: scale(1.08); /* Slight scale on hover */
+  box-shadow: 0px 10px 20px rgba(34, 108, 187, 0.3); /* Soft shadow */
+}
+
+/* Image with Bounce Effect on Hover */
+.heroImg {
+  max-width: 450px;
+  height: auto;
+  border-radius: 20px; /* Larger rounded corners */
+  transition: transform 0.6s ease;
+}
+
+.heroImg:hover {
+  transform: scale(1.05) translateY(-10px); /* Slight bounce effect */
+}
+
+/* Blurred Background Effects */
+.topBlur {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  bottom: -80px;
+  right: -120px;
+  width: 350px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Alternate Animation - Fade In and Zoom */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fadeInZoom {
+  animation: fadeInZoom 1s ease forwards;
+}
+
+/* More Subtle Hover Effects */
+.hoverEffect {
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.hoverEffect:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+}
+
+/* Smooth Fade for Text */
+.smoothFade {
+  opacity: 0;
+  animation: fadeInSmooth 1.2s ease-in-out forwards;
+}
+
+/* Smooth Fade-In */
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  

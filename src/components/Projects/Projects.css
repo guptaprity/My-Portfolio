@@ -1,0 +1,102 @@
+@import "../../vars.css";
+
+/* Projects.css */
+
+.project-section {
+  padding: 50px 20px;
+  
+}
+
+.section-title {
+  font-size: 2em;
+  color: #f1eaea;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #a69ae2;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-thumbnail {
+  opacity: 0.8;
+}
+
+.project-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.4em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.demo-btn {
+  background-color: #14621b; /* Blue color */
+}
+
+.demo-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.live-btn {
+  background-color: #e11313; /* Green color */
+}
+
+.live-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+  
+  
